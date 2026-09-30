@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Sofia Carrazco</title>
+        <style>
+            header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+
+        .boton-nav {
+            text-decoration: none;
+            color: brown;
+            background-color: burlywood;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+
+        .boton-nav:hover{
+            background-color: darkred;
+            color: #e0f7fa;
+        }
+
+
+        .boton-nav.activo {
+            background-color: firebrick;
+            color: #e0f7fa;
+            font-weight: bold;
+        }
+
+
+        main {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        aside {
+            width: 25%;
+
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #e0f7fa;
+            padding: 15px;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1 style="margin: 0;"> Elenita</h1>
+             <nav class="barra-navegacion">
+                    <a href="sematica.html" class="boton-nav ">Inicio</a>
+                    <a href="sematica2.0.html" class="boton-nav activo">redes sociales</a>
+                    <a href="sematica3.0.html" class="boton-nav ">ventas</a>
+                </nav>
+            </div>
+            <img src="imagen.jpg/empresa.jpeg" alt="Logo de mi empresa y de mi web" cass="logo-cabecera" width="100">
+        </header>
+
+        <main>
+            <aside>
+                <h2> barra lateral</h2>
+                <p>contenido, enlaces, redes sociales.</p>
+            </aside>
+            <section>
+                <article>
+                    <h3>articulo principal</h3>
+                    <p>Contenido del srticulo</p>
+                </article>
+            </section>
+        </main>
+
+        <footer> <p> pie de pagina</p>
+        </footer>
+    </body>
+</html>
